@@ -1,11 +1,14 @@
 import React from 'react'
 import Main from './Layouts/Main'
+import ItemContextProvider from './store/itemContext'
 
 const App = () => {
   return (
-    <div>
-      <Main/>
-    </div>
+    <ItemContextProvider>
+        <Main/>
+   
+    </ItemContextProvider>
+    
   )
 }
 
